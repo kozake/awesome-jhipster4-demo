@@ -1,0 +1,12 @@
+version: '2'
+services:
+    awesome_jhipster4_demo-postgresql:
+        container_name: awesome_jhipster4_demo-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/awesome_jhipster4_demo/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=awesome_jhipster4_demo
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
